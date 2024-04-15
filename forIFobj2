@@ -1,0 +1,40 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário o número inicial de patinhos
+        System.out.print("Digite o número inicial de patinhos: ");
+        int n = scanner.nextInt();
+
+        // Verifica se o número é válido (maior que zero)
+        if (n <= 0) {
+            System.out.println("Número inválido. Por favor, insira um número positivo maior que zero.");
+            return; // Encerra o programa
+        }
+
+        // Imprime a música dos patinhos
+        for (int i = n; i >= 0; i--) {
+            if (i > 1) {
+                System.out.println(i + " patinhos foram passear");
+                System.out.println("Além das montanhas");
+                System.out.println("Para brincar");
+                System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+                System.out.println("Mas só " + (i - 1) + " patinhos voltaram de lá\n");
+            } else if (i == 1) {
+                System.out.println(i + " patinho foi passear");
+                System.out.println("Além das montanhas");
+                System.out.println("Para brincar");
+                System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+                System.out.println("Mas nenhum patinho voltou de lá\n");
+            } else {
+                System.out.println("A mamãe patinha foi procurar");
+                System.out.println("Além das montanhas");
+                System.out.println("Na beira do mar");
+                System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+                System.out.println("E os " + n + " patinhos voltaram de lá.");
+            }
+        }
+
+        scanner.close();
+    }
+}
