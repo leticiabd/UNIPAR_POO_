@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para receber entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita e lê os três valores
+        System.out.println("Digite o primeiro valor:");
+        int valor1 = scanner.nextInt();
+
+        System.out.println("Digite o segundo valor:");
+        int valor2 = scanner.nextInt();
+
+        System.out.println("Digite o terceiro valor:");
+        int valor3 = scanner.nextInt();
+
+        // Fecha o Scanner após a leitura dos valores
+        scanner.close();
+
+        // Calcula a soma dos três valores
+        int total = valor1 + valor2 + valor3;
+
+        // Exibe o resultado da soma
+        System.out.println("A soma dos três valores é: " + total);
+    }
+}
