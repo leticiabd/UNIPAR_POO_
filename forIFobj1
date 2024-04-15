@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        // Percorre os números de 1 a 50
+        for (int i = 1; i <= 50; i++) {
+            // Inicializa a string para armazenar a explicação
+            String explanation = "";
+
+            // Verifica se o número é divisível por 3 e 5
+            if (i % 3 == 0 && i % 5 == 0) {
+                // Se sim, atualiza a explicação
+                explanation = "divisível por 3 e 5";
+            }
+            // Verifica se o número é divisível apenas por 3
+            else if (i % 3 == 0) {
+                // Se sim, atualiza a explicação
+                explanation = "divisível por 3";
+            }
+            // Verifica se o número é divisível apenas por 5
+            else if (i % 5 == 0) {
+                // Se sim, atualiza a explicação
+                explanation = "divisível por 5";
+            }
+
+            // Imprime o número e a explicação
+            if (!explanation.isEmpty()) {
+                System.out.println(i + " - FizzBuzz (" + explanation + ")");
+            }
+        }
+    }
+}
