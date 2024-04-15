@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para receber entrada do usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita e le os dois valores
+        System.out.println("Digite o primeiro valor:");
+        double valor1 = scanner.nextDouble();
+
+        System.out.println("Digite o segundo valor:");
+        double valor2 = scanner.nextDouble();
+
+        // Fecha o Scanner apos a leitura dos valores
+        scanner.close();
+
+        // Calcula a subtracao dos dois valores
+        double resultado = valor1 - valor2;
+
+        // Exibe o resultado da subtracao
+        System.out.println("A subtracao dos dois valores e: " + resultado);
+    }
+}
