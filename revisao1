@@ -1,0 +1,71 @@
+public class Carro {
+    // Atributos privados
+    private String marca;
+    private String modelo;
+    private int ano;
+    private String cor;
+
+    // Construtor para iniciar Carro
+    public Carro(String marca, String modelo, int ano, String cor) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.cor = cor;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public void exibirInformacoes() {
+        System.out.println("Informações do carro:");
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Ano: " + ano);
+        System.out.println("Cor: " + cor);
+    }
+
+    public static void main(String[] args) {
+        
+        Carro carro1 = new Carro("Toyota", "Corolla", 2022, "Branco");
+        Carro carro2 = new Carro("Ford", "Fiesta", 2020, "Vermelho");
+
+        carro1.exibirInformacoes();
+        carro2.exibirInformacoes();
+
+        carro1.setCor("Prata");
+        carro2.setModelo("Focus");
+
+        System.out.println("\nInformações atualizadas dos carros:");
+        carro1.exibirInformacoes();
+        carro2.exibirInformacoes();
+    }
+}
