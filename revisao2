@@ -1,0 +1,59 @@
+public class Produto {
+    
+    private String nome;
+    private double preco;
+    private int quantidadeEstoque;
+
+    public Produto(String nome, double preco, int quantidadeEstoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEstoque = quantidadeEstoque;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getQuantidadeEstoque() {
+        return quantidadeEstoque;
+    }
+
+    public void setQuantidadeEstoque(int quantidadeEstoque) {
+        this.quantidadeEstoque = quantidadeEstoque;
+    }
+
+    public void exibirInformacoes() {
+        System.out.println("Informações do produto:");
+        System.out.println("Nome: " + nome);
+        System.out.println("Preço: R$" + preco);
+        System.out.println("Quantidade em estoque: " + quantidadeEstoque);
+    }
+
+    public static void main(String[] args) {
+        
+        Produto produto1 = new Produto("Laptop", 3500.00, 10);
+        Produto produto2 = new Produto("Mouse", 50.00, 100);
+
+        produto1.exibirInformacoes();
+        produto2.exibirInformacoes();
+
+        produto1.setPreco(3200.00);
+        produto2.setQuantidadeEstoque(80);
+
+        System.out.println("\nInformações atualizadas dos produtos:");
+        produto1.exibirInformacoes();
+        produto2.exibirInformacoes();
+    }
+}
