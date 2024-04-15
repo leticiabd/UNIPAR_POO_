@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para receber entrada do usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita e le as duas notas
+        System.out.println("Digite a primeira nota:");
+        double nota1 = scanner.nextDouble();
+
+        System.out.println("Digite a segunda nota:");
+        double nota2 = scanner.nextDouble();
+
+        // Fecha o Scanner apos a leitura das notas
+        scanner.close();
+
+        // Calcula a media das duas notas
+        double media = (nota1 + nota2) / 2;
+
+        // Exibe a media das notas
+        System.out.println("A media das duas notas e: " + media);
+    }
+}
